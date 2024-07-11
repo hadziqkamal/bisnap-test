@@ -28,10 +28,15 @@ const headers = {
   'Authorization': "Bearer " + accessToken,
   'X-TIMESTAMP': timestamp,
   'X-SIGNATURE': signature,
+  'ORIGIN': 'origin123',
+  'Content-Type': 'application/json',
   'X-PARTNER-ID': '2323',
   'CHANNEL-ID': '23232',
   'X-EXTERNAL-ID': '2323232',
-  'Content-Type': 'application/json'
+  'X-IP-ADDRESS': '192.168.1.1',
+  'X-DEVICE-ID': 'device123',
+  'X-LATITUDE': '37.7749',
+  'X-LONGITUDE': '-122.4194'
 };
 
 
