@@ -3,12 +3,12 @@ const fs = require('fs');
 const crypto = require('crypto');
 const axios = require('axios');
 const host = process.env.HOST;
-const clientSecret = process.env.CLIENT_KEY;
+const clientSecret = process.env.CLIENT_SECRET;
 const accessToken = fs.readFileSync('access_token.txt', 'utf8');
 
 
 const body = {
-  "partnerReferenceNo": "ref123",
+  "partnerReferenceNo": "ref1236",
   "urlParam": {
     "url": "https://example.com/callback",
     "type": "REDIRECT",
@@ -43,10 +43,12 @@ const headers = {
   'X-PARTNER-ID': '2323',
   'CHANNEL-ID': '23232',
   'X-EXTERNAL-ID': '2323232',
-  'X-IP-ADDRESS': '192.168.1.1',
-  'X-DEVICE-ID': 'device123',
-  'X-LATITUDE': '37.7749',
-  'X-LONGITUDE': '-122.4194'
+  'Content-Type': 'application/json',
+  'X-IP-ADDRESS': '',
+  'X-DEVICE-ID' : 'deviceid',
+  'X-LATITUDE' : '22',
+  'X-LONGITUDE' : '22',
+  'ORIGIN' : 'web',
 };
 
 
